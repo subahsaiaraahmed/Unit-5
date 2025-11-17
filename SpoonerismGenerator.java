@@ -48,7 +48,7 @@ public class SpoonerismGenerator
 		{
 			/* use the substring function to move the starting consonants from each word to the other */
 			spoonWord1 = secondWord.substring(0, vowelNdx2) + firstWord.substring(vowelNdx1, firstWord.length());
-			spoonWord2 = firstWord.substring(0, vowelNdx2) + secondWord.substring(vowelNdx2, secondWord.length());
+			spoonWord2 = firstWord.substring(0, vowelNdx1) + secondWord.substring(vowelNdx2, secondWord.length());
 		
 			/* generate the output string */
 			// Output String = "Input Word 1 and Input Word 2 spoonerized are Spoonerized Word1 and Spoonerized Word 2"
