@@ -33,12 +33,12 @@ public class SpoonerismGenerator
 		int vowelNdx2;
 		
 		/* prompt the user for two words */
-		String first word = getWord("first");
-		String second word = getWord("second");
+		firstWord = getWord("first");
+		secondWord = getWord("second");
 		
 		/* find the index of the first vowel in each word */
-		integer vowel index 1 = vowelIndex(first word);
-		integer vowel index 2 = vowelIndex(second word);
+		vowelNdx1 = vowelIndex(firstWord);
+	 	vowelNdx2 = vowelIndex(secondWord);
 		
 		/* check to see if we have a vowel in the first position of both words */
 		if both vowel indeces are greater than 0
