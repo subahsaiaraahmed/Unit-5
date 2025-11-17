@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SpoonerismGenerator 
 {
-	private static Scanner scnr;
+	private static Scanner scnr = new Scanner(System.in);
 
 	public static void main (String[] args)
 	{
