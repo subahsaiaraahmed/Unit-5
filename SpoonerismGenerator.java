@@ -15,15 +15,22 @@ public class SpoonerismGenerator
 	{
 		/* pseudocode follows */
 		
-		instantiate a new instance of the Scanner class
-		declare a string to hold the first input word
-		declare a string to hold the second input word
-		declare a string to hold the first spoonerized word
-		declare a string to hold the second spoonerized word
-		declare a string to hold the output line
-		declare an intger to hold the first word's vowel position index
-		declare an intger to hold the second word's vowel position index
-	
+		// instantiate a new instance of the Scanner class
+		Scanner input = new Scanner(System.in);
+		// declare a string to hold the first input word
+		String firstWord;
+		// declare a string to hold the second input word
+		String secondWord;
+		// declare a string to hold the first spoonerized word
+		String spoonWord1;
+		// declare a string to hold the second spoonerized word
+		String spoonWord2;
+		// declare a string to hold the output line
+		String outputLine;
+		// declare an integer to hold the first word's vowel position index
+		int vowelNdx1;
+		// declare an integer to hold the second word's vowel position index
+		int vowelNdx2;
 		
 		/* prompt the user for two words */
 		String first word = getWord("first");
