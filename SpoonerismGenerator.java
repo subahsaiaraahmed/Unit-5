@@ -41,22 +41,25 @@ public class SpoonerismGenerator
 	 	vowelNdx2 = vowelIndex(secondWord);
 		
 		/* check to see if we have a vowel in the first position of both words */
-		if both vowel indeces are greater than 0
+		//if both vowel indeces are greater than 0
+		if(vowelNdx1 > 0 && vowelNdx2 > 0)
 		{
 			/* use the substring function to move the starting consonants from each word to the other */
-			Spoonerized Word1 = second input Word.substring(0, vowel indx2) + first input Word.substring(vowel index1, first input Word length());
-			Spoonerized Word2 = first input Word.substring(0, vowel index1) + second input Word.substring(vowel index2, second input Word length());
+			spoonWord1 = secondWord.substring(0, vowelNdx2) + firstWord.substring(vowelNdx1, firstWord.length());
+			spoonWord2 = firstWord.substring(0, vowelNdx2) + secondWord.substring(vowelNdx2, secondWord.length());
 		
 			/* generate the output string */
-			Output String = "Input Word 1 and Input Word 2 spoonerized are Spoonerized Word1 and Spoonerized Word 2"
+			// Output String = "Input Word 1 and Input Word 2 spoonerized are Spoonerized Word1 and Spoonerized Word 2"
+			outputLine = firstWord + " and " + secondWord + " spoonerized are " + spoonWord1 + " and " + spoonWord2 ;
 		}
 		else 
 		{
-		 	Output String = first word + " and " + second word + " are not good words to spoonerize.";
+		 	// Output String = first word + " and " + second word + " are not good words to spoonerize.";
+			outputLine = firstWord + " and " + secondWord + " are not good words to spoonerize.";
 		}
 		
 		/* print the output string to the console */
-		print(Output String);
+		System.out.println(outputLine);
 	}
 	
 	/* since we'll be doing this twice, we reuse the same code */
