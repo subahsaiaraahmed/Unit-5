@@ -7,8 +7,10 @@ public class SpoonerismGenerator
 	public static void main (String[] args)
 	{
 		/* pseudocode follows */
-		create a new instance of the SpoonerismGenerator class
-		call the run method	of that instance
+		// create a new instance of the SpoonerismGenerator class
+		SpoonerismGenerator spoonerismGenerator = new SpoonerismGenerator();
+		// call the run method	of that instance
+		spoonerismGenerator.run();
 	}
 	
 	public void run()
@@ -76,28 +78,33 @@ public class SpoonerismGenerator
 	public int vowelIndex(String inputString)
 	{
 		/* switch the local string to all lowercase for half the comparisons */	
-		inputString = inputString.toLowerCase();
+	 	inputString = inputString.toLowerCase();
 		
-		/* pseudocode follows */
-		declare a char variable to hold the character of the word we're comparing
-		declare an integer to hold the position of the character in the word
-	
-		Loop through each of the characters in the word from 0 to the length of the string
+	// 	/* pseudocode follows */
+	// 	declare a char variable to hold the character of the word we're comparing
+		char letter;
+	// 	declare an integer to hold the position of the character in the word
+		int index;
+	// 	Loop through each of the characters in the word from 0 to the length of the string
+		for (index = 0; index < inputString.length(); index++)
 		{
-			set the char variable equal to the character at the position we're examining
-			
-			if the position is greater than zero and the char is y
+			// 	set the char variable equal to the character at the position we're examining
+			letter =  inputString.charAt(index);
+			// 	if the position is greater than zero and the char is y
+			if(index > 0 && letter == 'y')
 			{
-				break the loop
+			// break the loop
+				return index;
 			}
-			else if the character is a,e,i,o,u 
-			{
-				break the loop
+			// 		else if the character is a,e,i,o,u 
+			else if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+			// 	break the loop
+				return index;
 			}
-			
 		}
-		
-		return the integer position of the vowel found;
+		// if not vowel was found return a 0
+		return 0;
+
 	}
 }
 
