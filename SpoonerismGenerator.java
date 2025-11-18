@@ -1,3 +1,21 @@
+/*
+UNIT 5
+Collaboration Exercise 1: Spoonerism Generator
+PROGRAM: SPOONERISM GENERATOR
+GROUP: Edgar Ortiz Jr, Subah Ahmed
+CLASS: COSC 1347
+DESCRIPTION: This program asks the user for two words and creates a Spoonerism from them.
+A Spoonerism is created when the beginning consonant sounds of two or more words are switched. 
+For example, rainy day will become dainy ray, and wooden chair becomes chooden wair.
+ 
+EXPECTED OUTPUT:
+
+	Enter first word to Spoonerize: (first user prompt, for example: Rainy)
+	Enter second word to Spoonerize: (Second user prompt, for example: Day)
+
+	(First user prompt: rainy) and (Second user prompt: day) spoonerized are (Spoonerized first user prompt: Dainy) and (Spoonerized second user prompt: Ray) .
+ */
+
 import java.util.Scanner;
 
 public class SpoonerismGenerator 
@@ -52,12 +70,12 @@ public class SpoonerismGenerator
 		
 			/* generate the output string */
 			// Output String = "Input Word 1 and Input Word 2 spoonerized are Spoonerized Word1 and Spoonerized Word 2"
-			outputLine = firstWord + " and " + secondWord + " spoonerized are " + spoonWord1 + " and " + spoonWord2 ;
+			outputLine = "\n " + firstWord + " and " + secondWord + " spoonerized are " + spoonWord1 + " and " + spoonWord2 + ".";
 		}
 		else 
 		{
 		 	// Output String = first word + " and " + second word + " are not good words to spoonerize.";
-			outputLine = firstWord + " and " + secondWord + " are not good words to spoonerize.";
+			outputLine = "\n " + firstWord + " and " + secondWord + " are not good words to spoonerize.";
 		}
 		
 		/* print the output string to the console */
